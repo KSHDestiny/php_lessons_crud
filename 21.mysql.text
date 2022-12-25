@@ -1,0 +1,39 @@
+// CRUD with Raw query 
+
+- Create
+INSERT INTO table_name (column1,column2) VALUES ('value1','value2');
+
+- Read
+SELECT * FROM table_name WHERE condition;
+
+- Update
+UPDATE table_name SET column1 = "value1" , column2 = "value2" WHERE condition;
+
+- Delete
+DELETE FROM table_name WHERE condition;
+____________________________________________________________________________
+
+// SQL condition
+( Operator  ->  = , != , > , < , >= , <= )
+
+-AND
+WHERE condition1 AND condition2;
+
+-OR 
+WHERE condition1 OR condition2;
+
+-BETWEEN
+WHERE column BETWEEN value1 AND value2;
+
+-IN
+WHERE column IN ('value1','value2');
+
+-NOT IN
+WHERE column NOT IN ('value1','value2');
+____________________________________________________________________________
+
+-AS (alias)
+SELECT column AS other_name FROM table_name;
+
+-GROUP BY
+SELECT column FROM table_name GROUP BY column;
